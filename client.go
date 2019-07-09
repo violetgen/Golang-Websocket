@@ -62,5 +62,5 @@ func main() {
 	client := NewClient()
 	go client.subscribeChannels()
 	go client.subscribeMessages()
-	client.write()
+	client.write() //this use the go routine created when main is called
 }
